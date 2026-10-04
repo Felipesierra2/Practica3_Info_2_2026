@@ -22,6 +22,7 @@ int main(){
     while(prueba[p] != '\0'){
         frase = diccionario[p].dic;
         fraseActual = agregarCaracter(frase, prueba[p]);
+
         if(compararFrases(frase,fraseActual)){
             salida->indice = buscarEnDiccionario(diccionario, tamDic, fraseActual);
         }

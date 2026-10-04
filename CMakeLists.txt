@@ -8,7 +8,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_executable(Practica3 main.cpp
     structs.h structs.cpp
     LZ78.h LZ78.cpp
-    README.md)
+    README.md
+    .gitignore)
 
 include(GNUInstallDirs)
 install(TARGETS Practica3
