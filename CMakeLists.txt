@@ -6,10 +6,14 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(Practica3 main.cpp
-    structs.h structs.cpp
+    structs.h
     LZ78.h LZ78.cpp
     README.md
-    .gitignore)
+    .gitignore
+    RLE.h RLE.cpp
+    Encriptacion.h Encriptacion.cpp
+    Archivos.h Archivos.cpp
+    Excepciones.h Excepciones.cpp)
 
 include(GNUInstallDirs)
 install(TARGETS Practica3

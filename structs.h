@@ -3,12 +3,13 @@
 
 struct Entrada
 {
-    char* dic;
+    int prefijo;
+    char caracter;
 };
 
 struct Salida {
     int  indice;
-    char caracter;
+    char frase;
 };
 
 #endif // STRUCTS_H

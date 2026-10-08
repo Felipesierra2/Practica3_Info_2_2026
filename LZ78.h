@@ -1,10 +1,17 @@
 #ifndef LZ78_H
 #define LZ78_H
-
 #include "structs.h"
-char* agregarCaracter(char* frase, char caracter);
-bool compararFrases(char* frase1, char* frase2);
-int buscarEnDiccionario(Entrada* diccionario, int cantidad, char* fraseActual);
-char* copiarFrase(char* frase);
-void agregarAlDiccionario(Entrada*& diccionario, int& cantidad, char* frase);
-#endif // LZ78_H
+
+const int BYTES_POR_PAR = 5;
+
+Salida* comprimirLZ78(const char* texto, int tam, int& cantidadSalida);
+
+char* descomprimirLZ78(const Salida* salida, int cantidadSalida, int& tamSalida);
+
+char* serializarSalida(const Salida* salida, int cantidadSalida, int& tamBytes);
+Salida* deserializarSalida(const char* bytes, int tamBytes, int& cantidadSalida);
+
+void liberarSalida(Salida*& salida, int& cantidad);
+
+#endif
+
